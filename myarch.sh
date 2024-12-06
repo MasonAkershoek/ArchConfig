@@ -25,7 +25,7 @@ fi
   
 
 # terminal stuff
-sudo pacman -S cowsay fortune-mod figlet htop neofetch sl sshfs zsh pipewire github-cli
+sudo pacman -S cowsay fortune-mod figlet htop neofetch sl sshfs zsh pipewire pipewire-pulse pulseaudio github-cli
 
 # extra hyprland stuff
 sudo pacman -S kitty swaync xdg-desktop-portal-hyprland hyprlock waybar hyprpaper wofi hypridle hyprpicker

@@ -1,0 +1,45 @@
+window {
+padding: none;
+margin: none;
+font-size: 25;
+background-color: #282a36;
+border-radius: 15px;
+}
+
+#input {
+color: white;
+margin: 5px;
+padding: 10px;
+background-color: #44475a;
+}
+
+#inner-box {
+margin: 5px;
+background-color: #282a36;
+}
+
+#outer-box {
+margin: 5px;
+border: none;
+background-color: #282a36;
+border-radius: 10px
+}
+
+#scroll {
+background-color: #282a36;
+}
+
+#text {
+  color: white;
+  padding: 10px;
+}
+
+#text:selected{
+  color: white;
+  border: none;
+}
+
+#entry:selected{
+  color: white;
+  background-color: #44475a;
+}

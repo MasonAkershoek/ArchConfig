@@ -31,7 +31,7 @@ sudo pacman -S cowsay fortune-mod figlet htop neofetch sl sshfs zsh pipewire
 sudo pacman -S kitty swaync xdg-desktop-portal-hyprland hyprlock waybar hyprpaper wofi hypridle hyprpicker
 
 # GUI apps
-sudo pacman -S firefox discord steam prismlauncher
+sudo pacman -S firefox discord steam prismlauncher qbittorrent
 
 # Coding stuff
 sudo pacman -S ranger neovim jre-openjdk love lua python3
@@ -42,3 +42,21 @@ sudo pacman -S qt5-wayland qt6-wayland swww w3m ttf-hack ttf-font-awesome man-db
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 zsh
+
+# yay stuff
+
+sudo pacman -Syyu
+sudo pacman -S --needed base-devel git
+
+mkdir ~/userapps
+cd ~/userapps
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+yay -S uwsm hyprpolkitagent wlogout qman-git visual-studio-code-bin
+
+echo "if uwsm check may-start && uwsm select; then
+	exec systemd-cat -t uwsm_start uwsm start default
+fi" >> ~/.zshrc
+
